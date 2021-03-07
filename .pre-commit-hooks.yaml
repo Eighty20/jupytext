@@ -8,3 +8,14 @@
   # many more types are actually supported (r, matlab, js, bash, powershell, robot, ...)
   # If you need support for one of these other extensions, please override this default value
   types_or: [jupyter, markdown, python]
+
+- id: jupytext-notebookless
+  name: jupytext notebookless
+  description: Runs jupytext on all paired files. Ignore notebooks
+  language: python
+  entry: jupytext
+  require_serial: true
+  # We have only added the most frequent text notebook types, but
+  # many more types are actually supported (r, matlab, js, bash, powershell, robot, ...)
+  # If you need support for one of these other extensions, please override this default value
+  types_or: [markdown, python]
